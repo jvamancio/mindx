@@ -54,9 +54,6 @@ USER nonroot
 
 EXPOSE 8000
 
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s \
-    CMD python -c "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/health').status==200 else 1)"
-
 # Produção: chama o binário da venv diretamente (fastapi run, sem reload).
 # Evita `uv run`, que faria sync/relink em runtime — desnecessário aqui
 # (deps já resolvidas no build) e é justamente uma causa comum do erro
