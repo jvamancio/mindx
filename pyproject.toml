@@ -1,0 +1,22 @@
+[project]
+name = "mindx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "deepagents>=0.6.12",
+    "deepagents-code>=0.0.1",
+    "fastapi[standard]>=0.139.0",
+    "langchain>=1.3.13",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.4.9",
+    "langchain-mcp-adapters>=0.3.0",
+    "langchain-openai>=1.3.5",
+    "langchain-quickjs>=0.3.2",
+    "langgraph>=1.2.9",
+    "langgraph-cli[inmem]>=0.4.0",
+    "langsmith[sandbox]>=0.10.2",
+    "python-dotenv>=1.2.2",
+    "uvicorn>=0.51.0",
+]
