@@ -4,7 +4,7 @@ from pathlib import Path
 from deepagents import create_deep_agent
 from langgraph.checkpoint.memory import MemorySaver
 from deepagents.backends import FilesystemBackend 
-from prompts.prompt_exemple import SYSTEM_PROMPT_EXEMPLE
+from agents.prompts.prompt_exemple import SYSTEM_PROMPT_EXEMPLE
 
 # Carrega as variáveis do arquivo .env
 load_dotenv()
